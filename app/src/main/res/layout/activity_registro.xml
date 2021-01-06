@@ -133,7 +133,7 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/numero_de_celular"
-        android:inputType="textPersonName"
+        android:inputType="number|textPersonName"
         android:phoneNumber="true"
         app:layout_constraintBottom_toTopOf="@+id/idRol"
         app:layout_constraintEnd_toEndOf="@+id/eContrasenhaRegis"
