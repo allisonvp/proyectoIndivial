@@ -184,7 +184,7 @@ public class VendedorActivity extends AppCompatActivity {
             precio.setError("Ingrese un precio");
             return;
         }else if (TextUtils.isEmpty(nomFoto)) {
-            precio.setError("Ingrese un nombre para la foto");
+            namePhoto.setError("Ingrese un nombre para la foto");
             return;
         } else if (!TextUtils.isEmpty(nomFoto)){
 
