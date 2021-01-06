@@ -80,13 +80,14 @@ tools:context=".Roles.VendedorActivity">
         android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="numberDecimal"
+        android:numeric="decimal"
         app:layout_constraintEnd_toEndOf="@+id/textView22"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView22"
-        app:layout_constraintTop_toBottomOf="@+id/textView22"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
 
     <ImageView

@@ -42,6 +42,7 @@ public class InicioSesion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_sesion);
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        firebaseAuth = FirebaseAuth.getInstance();
         ValidacionUsuario(currentUser);
     }
 
@@ -50,7 +51,7 @@ public class InicioSesion extends AppCompatActivity {
         EditText eCorreo = findViewById(R.id.eCorreo);
         EditText eContrasenha = findViewById(R.id.eContrasenha);
         ProgressBar progressIniciarSesion = findViewById(R.id.progressIniciarSesion);
-        firebaseAuth = FirebaseAuth.getInstance();
+
 
         String correo = eCorreo.getText().toString().trim();
         String pwd = eContrasenha.getText().toString().trim();
@@ -106,19 +107,26 @@ public class InicioSesion extends AppCompatActivity {
         recuperarDialog.setPositiveButton("Enviar correo", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                String correo = correoRecuperarPwd.getText().toString();
-                firebaseAuth.sendPasswordResetEmail(correo).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Toast.makeText(InicioSesion.this, "Se le envio un correo para recuperar su contraseña", Toast.LENGTH_SHORT).show();
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(InicioSesion.this, "Error en el envio de correo: " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                    }
-                });
 
+                String correoRec = correoRecuperarPwd.getText().toString();
+
+                if (TextUtils.isEmpty(correoRec)){
+                    correoRecuperarPwd.setError("Ingrese un correo electronico");
+                    return;
+                }else{
+                    firebaseAuth.sendPasswordResetEmail(correoRec).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Toast.makeText(InicioSesion.this, "Se le envio un correo para recuperar su contraseña", Toast.LENGTH_SHORT).show();
+
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(InicioSesion.this, "Error en el envio de correo: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
             }
         });
 

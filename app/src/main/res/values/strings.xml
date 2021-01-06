@@ -11,8 +11,6 @@
     <string name="bambu">Bambu</string>
     <string name="categor_a">Categoría:</string>
     <string name="perfume">Perfume</string>
-    <string name="todo">TODO</string>
-    <string name="todo">TODO</string>
     <string name="hola_allison">Hola, Allison!</string>
     <string name="encuentra_el_producto_ideal_para_ti">Encuentra el producto ideal para ti</string>
     <string name="recuperar_contrase_a">Recuperar contraseña</string>
@@ -25,10 +23,9 @@
     <string name="registrarse">Registrarse</string>
     <string name="cliente">Cliente</string>
     <string name="vendedor">Vendedor</string>
-    <string name="feria_del_pollito">Feria del pollito</string>
-    <string name="correo_electr_nico">Correo electrónico</string>
+
     <string name="numero_de_celular">Numero de celular</string>
-    <string name="contrase_a">Contraseña</string>
+
     <string name="marca_o_nombre_de_usuario">Marca o Nombre de usuario</string>
     <string name="foto_del_producto">Foto del producto</string>
     <string name="nombre_del_producto">Nombre del producto</string>
@@ -38,16 +35,8 @@
     <string name="catergoria">Catergoria</string>
     <string name="nombre_de_la_foto">Nombre de la foto</string>
     <string name="precio">Precio</string>
-    <string name="todo">TODO</string>
-    <string name="todo">TODO</string>
-    <string name="todo">TODO</string>
-    <string name="todo">TODO</string>
-    <string name="vendedor">Vendedor</string>
-    <string name="bambu">Bambu</string>
-    <string name="perfume_cherry">Perfume Cherry</string>
-    <string name="_15_00">$ 15.00</string>
+
     <string name="tipo">Tipo</string>
-    <string name="perfume">Perfume</string>
-    <string name="precio">Precio</string>
     <string name="todo">TODO</string>
+    <string name="categoria">Categoria</string>
 </resources>

@@ -54,16 +54,17 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="192dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/contrase_a"
         android:inputType="textPersonName"
+        android:password="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/eCorreoRegis"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/eCorreoRegis"
         app:layout_constraintTop_toBottomOf="@+id/eCorreoRegis"
-        app:layout_constraintVertical_bias="0.0"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/eCorreoRegis"
@@ -129,15 +130,16 @@
         android:layout_width="286dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/numero_de_celular"
         android:inputType="textPersonName"
+        android:phoneNumber="true"
         app:layout_constraintBottom_toTopOf="@+id/idRol"
         app:layout_constraintEnd_toEndOf="@+id/eContrasenhaRegis"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/eContrasenhaRegis"
         app:layout_constraintTop_toBottomOf="@+id/eContrasenhaRegis"
-        app:layout_constraintVertical_bias="0.0"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

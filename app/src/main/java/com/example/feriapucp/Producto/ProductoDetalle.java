@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -13,7 +15,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.feriapucp.Autenticacion.InicioSesion;
 import com.example.feriapucp.R;
+import com.example.feriapucp.Roles.ClienteActivity;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
@@ -88,6 +93,19 @@ public class ProductoDetalle extends AppCompatActivity {
             appInstalled = false;
         }
         return appInstalled;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_bar,menu);
+        return true;
+    }
+
+    public void cerrarSesion(MenuItem item){
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        firebaseAuth.signOut();
+        startActivity(new Intent(ProductoDetalle.this, InicioSesion.class));
+        finish();
     }
 
 }
