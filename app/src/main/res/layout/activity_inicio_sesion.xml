@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:onClick="recuperarContrasenha"
-        android:text="Recuperar contraseña"
+        android:text="@string/recuperar_contrase_a"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnCambioRegis"
         app:layout_constraintHorizontal_bias="0.455"
@@ -27,12 +27,12 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint="@string/contrase_a"
         android:inputType="textPersonName"
-        android:password="true"
         app:layout_constraintEnd_toEndOf="@+id/eCorreo"
         app:layout_constraintStart_toStartOf="@+id/eCorreo"
-        app:layout_constraintTop_toBottomOf="@+id/eCorreo" />
+        app:layout_constraintTop_toBottomOf="@+id/eCorreo"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btnIniciarSesion"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:onClick="IniciarSesion"
-        android:text="Iniciar Sesión"
+        android:text="@string/iniciar_sesi_n"
         app:layout_constraintEnd_toEndOf="@+id/eContrasenha"
         app:layout_constraintStart_toStartOf="@+id/eContrasenha"
         app:layout_constraintTop_toBottomOf="@+id/eContrasenha" />
@@ -53,7 +53,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/pattaya"
         android:gravity="center"
-        android:text="Feria del pollito"
+        android:text="@string/feria_del_pollito"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#000000"
         android:textSize="42sp"
@@ -71,12 +71,13 @@
         android:layout_height="48dp"
         android:layout_marginTop="280dp"
         android:ems="10"
-        android:hint="Correo electrónico"
+        android:hint="@string/correo_electr_nico"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/btnCambioRegis"
@@ -84,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:onClick="CambiarARegistrarse"
-        android:text="¿No tienes una cuenta?  Regístrate"
+        android:text="@string/no_tienes_una_cuenta_reg_strate"
         app:layout_constraintEnd_toEndOf="@+id/btnIniciarSesion"
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="@+id/btnIniciarSesion"

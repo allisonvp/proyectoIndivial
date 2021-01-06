@@ -18,13 +18,26 @@
 
 
         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/solicitar_informaci_n_por_whatsapp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/idDescripDet"
+            app:layout_constraintTop_toBottomOf="@+id/idDescripDet" />
+
+        <TextView
             android:id="@+id/idNumeroCelularDet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
-            android:layout_marginEnd="188dp"
+            android:layout_marginEnd="200dp"
             android:layout_marginBottom="32dp"
-            android:text="942977934"
+            android:text="@string/_942977934"
             android:textSize="21sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -40,9 +53,9 @@
             android:layout_marginTop="88dp"
             android:layout_marginEnd="128dp"
             android:fontFamily="@font/rubik_bold"
-            android:text="Perfume Cherry"
+            android:text="@string/perfume_cherry"
             android:textColor="@android:color/background_dark"
-            android:textSize="20sp"
+            android:textSize="24sp"
             app:layout_constraintEnd_toStartOf="@+id/idPrecioDet"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="24dp"
             android:fontFamily="@font/rubik_bold"
-            android:text="$ 15.00"
+            android:text="@string/_15_00"
             android:textColor="#42995C"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/idNombreProDet"
@@ -64,55 +77,38 @@
 
         <TextView
             android:id="@+id/idDescripDet"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="136dp"
+            android:layout_width="382dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/rubik"
             android:lineSpacingExtra="2dp"
-            android:text="Un perfume para el hombre poderoso como las olas que embisten las rocas, refrescante como el agua de un mar infinito, sin límites como el hombre que no rehúye los riesgos. 10 ml e 0.3 fl.oz."
+            android:text="@string/un_perfume_para_el_hombre_poderoso_como_las_olas_que_embisten_las_rocas_refrescante_como_el_agua_de_un_mar_infinito_sin_l_mites_como_el_hombre_que_no_reh_ye_los_riesgos_10_ml_e_0_3_fl_oz"
             android:textAlignment="viewStart"
             android:textColor="@android:color/background_dark"
-            app:layout_constraintEnd_toEndOf="@+id/idPrecioDet"
+            app:layout_constraintEnd_toEndOf="@+id/idCatDet"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/ratingBar2"
-            app:layout_constraintTop_toBottomOf="@+id/idNombreProDet" />
-
-        <RatingBar
-            android:id="@+id/ratingBar2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:scaleX="0.8"
-            android:scaleY="0.8"
-            android:transformPivotX="0dp"
-            android:transformPivotY="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/idDescripDet"
-            app:layout_constraintEnd_toEndOf="@+id/idPrecioDet"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView7"
-            app:layout_constraintTop_toBottomOf="@+id/idNombreProDet"
-            app:layout_constraintVertical_bias="0.819" />
+            app:layout_constraintStart_toStartOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/idCatDet" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vendedor: "
+            android:layout_marginTop="8dp"
+            android:text="@string/marca"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/ratingBar2"
             app:layout_constraintEnd_toEndOf="@+id/idPrecioDet"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/idNombreProDet"
-            app:layout_constraintTop_toBottomOf="@+id/idNombreProDet"
-            app:layout_constraintVertical_bias="0.154" />
+            app:layout_constraintTop_toBottomOf="@+id/idNombreProDet" />
 
         <TextView
             android:id="@+id/idMarcaDet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="3dp"
-            android:text="Bambu "
+            android:layout_marginStart="5dp"
+            android:text="@string/bambu"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/textView7"
@@ -126,6 +122,7 @@
             android:id="@+id/btnWhatsAppDet"
             android:layout_width="55dp"
             android:layout_height="55dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="24dp"
             app:layout_constraintBottom_toBottomOf="@+id/idNumeroCelularDet"
             app:layout_constraintEnd_toStartOf="@+id/idNumeroCelularDet"
@@ -133,14 +130,15 @@
             app:layout_constraintStart_toStartOf="@+id/idDescripDet"
             app:layout_constraintTop_toTopOf="@+id/idNumeroCelularDet"
             app:layout_constraintVertical_bias="0.196"
-            app:srcCompat="@drawable/ic_action_whatsapp" />
+            app:srcCompat="@drawable/ic_action_whatsapp"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:id="@+id/textView19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Tipo:"
+            android:text="@string/categor_a"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/textView7"
@@ -151,7 +149,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:text="Perfume"
+            android:text="@string/perfume"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/textView19"
@@ -174,6 +172,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/prod" />
+        app:srcCompat="@drawable/prod"
+        android:contentDescription="@string/todo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

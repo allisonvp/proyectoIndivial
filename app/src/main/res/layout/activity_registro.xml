@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:onClick="CambiarAIniciarSesion"
-        android:text="¿Ya tienes una cuenta?  Inicia sesión"
+        android:text="@string/ya_tienes_una_cuenta_inicia_sesi_n"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnRegistrarse"
         app:layout_constraintHorizontal_bias="0.491"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="88dp"
         android:onClick="Registrarse"
-        android:text="Registrarse"
+        android:text="@string/registrarse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/eContrasenhaRegis"
         app:layout_constraintHorizontal_bias="0.0"
@@ -41,11 +41,12 @@
         android:layout_height="48dp"
         android:layout_marginTop="280dp"
         android:ems="10"
-        android:hint="Marca o Nombre de usuario"
+        android:hint="@string/marca_o_nombre_de_usuario"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/eContrasenhaRegis"
@@ -54,15 +55,15 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="192dp"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint="@string/contrase_a"
         android:inputType="textPersonName"
-        android:password="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/eCorreoRegis"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/eCorreoRegis"
         app:layout_constraintTop_toBottomOf="@+id/eCorreoRegis"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/eCorreoRegis"
@@ -70,12 +71,13 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Correo electrónico"
+        android:hint="@string/correo_electr_nico"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/eNombre"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/eNombre"
-        app:layout_constraintTop_toBottomOf="@+id/eNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/eNombre"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView3"
@@ -85,7 +87,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/pattaya"
         android:gravity="center"
-        android:text="Feria del pollito"
+        android:text="@string/feria_del_pollito"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#000000"
         android:textSize="42sp"
@@ -112,13 +114,13 @@
             android:id="@+id/idVendedor"
             android:layout_width="104dp"
             android:layout_height="match_parent"
-            android:text="Vendedor" />
+            android:text="@string/vendedor" />
 
         <RadioButton
             android:id="@+id/idCliente"
             android:layout_width="104dp"
             android:layout_height="match_parent"
-            android:text="Cliente" />
+            android:text="@string/cliente" />
 
     </RadioGroup>
 
@@ -128,14 +130,14 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Numero de celular"
+        android:hint="@string/numero_de_celular"
         android:inputType="textPersonName"
-        android:phoneNumber="true"
         app:layout_constraintBottom_toTopOf="@+id/idRol"
         app:layout_constraintEnd_toEndOf="@+id/eContrasenhaRegis"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/eContrasenhaRegis"
         app:layout_constraintTop_toBottomOf="@+id/eContrasenhaRegis"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

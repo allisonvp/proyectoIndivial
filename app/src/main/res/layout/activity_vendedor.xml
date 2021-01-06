@@ -13,7 +13,7 @@ tools:context=".Roles.VendedorActivity">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Foto del producto"
+        android:text="@string/foto_del_producto"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/idPrecio"
@@ -27,12 +27,13 @@ tools:context=".Roles.VendedorActivity">
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Nombre del producto"
+        android:hint="@string/nombre_del_producto"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/textView24"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView24"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/idDescripcion"
@@ -41,6 +42,7 @@ tools:context=".Roles.VendedorActivity">
         android:layout_marginTop="8dp"
         android:ems="10"
         android:gravity="start|top"
+        android:importantForAutofill="no"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="@+id/textView21"
         app:layout_constraintHorizontal_bias="0.0"
@@ -52,7 +54,7 @@ tools:context=".Roles.VendedorActivity">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Descripcion"
+        android:text="@string/descripcion"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/idCategoria"
@@ -65,7 +67,7 @@ tools:context=".Roles.VendedorActivity">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Precio"
+        android:text="@string/precio"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/idDescripcion"
@@ -83,7 +85,8 @@ tools:context=".Roles.VendedorActivity">
         app:layout_constraintEnd_toEndOf="@+id/textView22"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView22"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        android:autofillHints="" />
 
 
     <ImageView
@@ -96,7 +99,8 @@ tools:context=".Roles.VendedorActivity">
         app:layout_constraintStart_toStartOf="@+id/idNamePhoto"
         app:layout_constraintTop_toBottomOf="@+id/idNamePhoto"
         app:layout_constraintVertical_bias="0.34"
-        tools:srcCompat="@drawable/ic_action_imageupload" />
+        tools:srcCompat="@drawable/ic_action_imageupload"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView24"
@@ -105,7 +109,7 @@ tools:context=".Roles.VendedorActivity">
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/rubik"
-        android:text="Registro del producto"
+        android:text="@string/registro_del_producto"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -128,7 +132,8 @@ tools:context=".Roles.VendedorActivity">
         app:layout_constraintBottom_toTopOf="@+id/btnSubir"
         app:layout_constraintEnd_toEndOf="@+id/btnSubir"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnSubir" />
+        app:layout_constraintStart_toStartOf="@+id/btnSubir"
+        android:contentDescription="@string/todo" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_image"
@@ -139,7 +144,8 @@ tools:context=".Roles.VendedorActivity">
         app:layout_constraintBottom_toTopOf="@+id/add_storage"
         app:layout_constraintEnd_toEndOf="@+id/add_storage"
         app:layout_constraintStart_toStartOf="@+id/add_storage"
-        app:srcCompat="@drawable/ic_action_imageuploadd" />
+        app:srcCompat="@drawable/ic_action_imageuploadd"
+        android:contentDescription="@string/todo" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_camera"
@@ -150,7 +156,9 @@ tools:context=".Roles.VendedorActivity">
         app:layout_constraintBottom_toTopOf="@+id/add_image"
         app:layout_constraintEnd_toEndOf="@+id/add_image"
         app:layout_constraintStart_toStartOf="@+id/add_image"
-        app:srcCompat="@drawable/ic_action_cam" />
+        app:srcCompat="@drawable/ic_action_cam"
+        android:contentDescription="@string/todo"
+        android:focusable="true" />
 
     <Button
         android:id="@+id/btnSubir"
@@ -159,7 +167,7 @@ tools:context=".Roles.VendedorActivity">
         android:layout_marginEnd="72dp"
         android:layout_marginBottom="48dp"
         android:onClick="uploadImageToFirebase"
-        android:text="GUARDAR"
+        android:text="@string/guardar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -169,12 +177,13 @@ tools:context=".Roles.VendedorActivity">
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Nombre de la foto"
+        android:hint="@string/nombre_de_la_foto"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/textView23"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView23"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/idCategoria"
@@ -182,11 +191,12 @@ tools:context=".Roles.VendedorActivity">
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Catergoria"
+        android:hint="@string/catergoria"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/idNomProd"
         app:layout_constraintStart_toStartOf="@+id/idNomProd"
-        app:layout_constraintTop_toBottomOf="@+id/idNomProd" />
+        app:layout_constraintTop_toBottomOf="@+id/idNomProd"
+        android:autofillHints="" />
 
     <ProgressBar
         android:id="@+id/progressBar"
