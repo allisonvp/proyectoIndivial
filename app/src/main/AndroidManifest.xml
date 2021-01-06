@@ -16,8 +16,10 @@
         android:roundIcon="@mipmap/ic_feria_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FeriaPUCP">
-        <activity android:name=".Producto.ProductoDetalle"></activity>
-        <activity android:name=".Roles.ClienteActivity" />
+        <activity android:name=".Producto.ProductoDetalle"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Roles.ClienteActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".Roles.VendedorActivity"
             android:screenOrientation="portrait">
         </activity>
