@@ -76,12 +76,12 @@ public class Registro extends AppCompatActivity {
         }
 
         if (TextUtils.isEmpty(pwdRegis)){
-            eCorreoRegis.setError("Ingrese un contraseña");
+            eContrasenhaRegis.setError("Ingrese un contraseña");
             return;
         }
 
         if (pwdRegis.length()<8){
-            eCorreoRegis.setError("Ingrese como mínimo 8 caracteres");
+            eContrasenhaRegis.setError("Ingrese como mínimo 8 caracteres");
             return;
         }
 
