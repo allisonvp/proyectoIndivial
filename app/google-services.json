@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "476401186506",
+    "firebase_url": "https://feriapucp-default-rtdb.firebaseio.com",
+    "project_id": "feriapucp",
+    "storage_bucket": "feriapucp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476401186506:android:fef158ab4be8d0c801e633",
+        "android_client_info": {
+          "package_name": "com.example.feriapucp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476401186506-n9eji1k9oo8l2kv0bhqb62qfhf8s6rkj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.feriapucp",
+            "certificate_hash": "0c8f12524dac5a4ad5c7c79cc8563e546fe867a0"
+          }
+        },
+        {
+          "client_id": "476401186506-19ci1tcccluqeujmk3bbrp88rfa5k4v3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4qdEERNxJTp04jvWId7G6eETqaVFBDzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "476401186506-19ci1tcccluqeujmk3bbrp88rfa5k4v3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

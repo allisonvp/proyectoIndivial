@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feriabg4"
+    tools:context=".Autenticacion.InicioSesion">
+
+    <TextView
+        android:id="@+id/btnRecuperarContrasenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="recuperarContrasenha"
+        android:text="Recuperar contraseña"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnCambioRegis"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="@+id/btnCambioRegis"
+        app:layout_constraintTop_toBottomOf="@+id/progressIniciarSesion"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <EditText
+        android:id="@+id/eContrasenha"
+        android:layout_width="286dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPersonName"
+        android:password="true"
+        app:layout_constraintEnd_toEndOf="@+id/eCorreo"
+        app:layout_constraintStart_toStartOf="@+id/eCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/eCorreo" />
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="IniciarSesion"
+        android:text="Iniciar Sesión"
+        app:layout_constraintEnd_toEndOf="@+id/eContrasenha"
+        app:layout_constraintStart_toStartOf="@+id/eContrasenha"
+        app:layout_constraintTop_toBottomOf="@+id/eContrasenha" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="371dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/pattaya"
+        android:gravity="center"
+        android:text="Feria del pollito"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <EditText
+        android:id="@+id/eCorreo"
+        android:layout_width="286dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="280dp"
+        android:ems="10"
+        android:hint="Correo electrónico"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btnCambioRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="CambiarARegistrarse"
+        android:text="¿No tienes una cuenta?  Regístrate"
+        app:layout_constraintEnd_toEndOf="@+id/btnIniciarSesion"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/btnIniciarSesion"
+        app:layout_constraintTop_toBottomOf="@+id/btnIniciarSesion" />
+
+    <ProgressBar
+        android:id="@+id/progressIniciarSesion"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/btnCambioRegis"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/btnCambioRegis"
+        app:layout_constraintTop_toBottomOf="@+id/btnCambioRegis" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
